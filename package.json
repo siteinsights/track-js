@@ -1,0 +1,22 @@
+{
+  "name": "@siteinsights/track-js",
+  "version": "1.0.0",
+  "description": "Package for tracking events to be made available in SiteInsights.",
+  "main": "output/index.js",
+  "author": "SiteInsights.io",
+  "license": "MIT",
+  "scripts": {
+    "build": "NODE_ENV=production babel --minified --compact --presets es2015,stage-0 --plugins transform-runtime -d output/ index.js",
+    "test": "exit 0"
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
